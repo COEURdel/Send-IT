@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SendIT</title>
+	<link rel="stylesheet" type="text/css" href="/views.css">
+</head>
+<body>
+	<nav class="container">
+    	<div class="home"><a href="/">SendIT</a></div>
+    	<div class="other1"></div>
+    	<div class="other2"><a href="/parcels/new">New order</a></div>
+ 	</nav>
+<h1>All parcels delivery order</h1><br><br><hr>
+
+<% orders.forEach(function(order){ %>
+	<div class="view_parcels">
+ 		<div class="first"><h3>Order</h3></div>
+ 		<div class="second"><h3>Description</h3></div>
+ 		<div class="third">
+ 		<p><%=order.parcel_name%></p><br>
+ 		</div>
+ 		<div class="fourth">
+			<p><%=order.description%></p>
+		</div>
+		<form action="/parcels/<%=order.id%> method="GET">
+			<input type="submit" value="View More">
+		</form>
+ 	</div><hr>
+<% }); %>
+<p id="down_paragraph">&copy; 2018 Runoro Isaie</p>
+
+</body>
+</html>

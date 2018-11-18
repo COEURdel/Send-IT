@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SendIT</title>
+	<link rel="stylesheet" type="text/css" href="/new.css">
+</head>
+<body>
+	<nav class="container">
+    	<div class="home"><a href="/">SendIT</a></div>
+    	<div class="other1"></div>
+    	<div class="other2"></div>
+ 	</nav>
+    	
+	<form action="/parcels" method="POST">
+		<h1>New order</h1><br><br>
+		<label>Parcel's name:<br> <input type="text" name="parcel_name" required></label><br><br>
+		<label>Location:<br> <input type="text" name="location" required></label><br><br>
+
+		<label>Description:<br> <textarea></textarea></label><br><br><br><br>
+
+		<input type="submit" value="Place an order"><br><br>
+		
+	</form>
+	<p id="down_paragraph">&copy; 2018 Runoro Isaie</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SendIT</title>
+	<link rel="stylesheet" type="text/css" href="/sign_up.css">
+</head>
+<body>
+	<nav class="container">
+    	<div class="home"><a href="welcome.html">SendIT</a></div>
+    	<div class="other1"></div>
+    	<div class="other2"></div>
+	</nav>
+	<h1>Create Your Account</h1><br>
+	<form action="/parcels" method="GET">
+		<label>Name: <input type="text" name="first_name" placeholder="enter your names" required></label><br><br>
+		
+		<label>Username: <input type="text" name="last_name" placeholder="choose a username" required></label><br><br>
+
+		<label>Email: <input type="email" name="mail" placeholder="email" required></label><br><br>
+		
+		<label>Password: <input type="password" name="password" placeholder="password" required></label><br><br>
+
+		<label>Re-type <br> Password: <input type="password" name="password" placeholder="Re-type password" required></label><br><br>
+
+		<label>Gender: <br>
+			<input type="radio" name="password" placeholder="Re-type password" required> Male
+			<input type="radio" name="password" placeholder="Re-type password" required> Female 
+			<input type="radio" name="password" placeholder="Re-type password" required> Other
+		</label><br><br>
+
+         Do you agree with our terms?
+		<input type="checkbox" name="agree" required=""><br><br><hr>
+
+		<input type="submit" value="Sign Up"><br><br>
+		
+		<i>If you have already an account; </i> <a href="/login">Sign In</a>
+	</form>
+</body>
+</html>

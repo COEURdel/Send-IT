@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SendIT</title>
+	<link rel="stylesheet" type="text/css" href="/details.css">
+</head>
+<body>
+	<nav class="container">
+    	<div class="home"><a href="/">SendIT</a></div>
+    	<div class="other1"></div>
+    	<div class="other2"></div>
+ 	</nav>
+<h1>Parcel Order</h1><br><br>
+ 	<div class="view_parcels">
+ 		<div class="first"><h3>Parcel name:</h3></div>
+ 		<div class="second"><span><%=order.parcel_name%></span></div>
+ 		<div class="third"><h3>Parcel Description: </h3></div>
+ 		<div class="fourth"><span><%=order.description%></span></div>
+ 		<div class="fourth"><h3>Location: </h3></div>
+ 		<div class="fourth"><span><%=order.location%></span></div>
+ 		<div class="fifth"><h3>Delivery Status: </h3></div>
+ 		<div class="fifth"><span><%=order.status%></span></div>
+ 		<form action="/parcels/:parrel_id/update" method="get">
+ 			<input type="submit" name="update" value="Change order">
+ 		</form>
+ 		<form action="/parcels/:parrel_id?_method=DELETE" method="POST">
+ 			<input type="submit" name="delete" value="Cancel order">
+ 		</form>
+ 	</div>
+ 	<p id="down_paragraph">&copy; 2018 Runoro Isaie</p>
+</body>
+</html>
