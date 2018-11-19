@@ -4,8 +4,8 @@
   "description": "app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/test.js",
-    "start": "nodemon server/transpiled/index.js"
+    "test": "mocha server/test/test.js",
+    "start": "nodemon server/dist/index.js"
   },
   "author": "Isaie",
   "license": "ISC",
