@@ -5,24 +5,22 @@ class ordersController {
 // GET /All orders
   static getAllOrders(req, res) {
     return res.json({
-      Parcel_Title: "View All orders",
-      Parcel_orders: orders
+      orders: orders
     });
   }
 
 // POST/ Create order
   static createOrder(req, res) {
-    const Id = parseInt(orders.length) + 1;
+    const id = parseInt(orders.length) + 1;
     const { ParcelName, description, location } = req.body;
     const newOrder = {
-      Id,
+      id,
       ParcelName,
       description,
       location,
     };
     orders.push(newOrder);
     return res.status(200).json({
-      status_response: "An Order was created",
       Parcel_orders: orders
     });
   }
@@ -33,12 +31,11 @@ class ordersController {
     const order = orders.find(oneOrder => oneOrder.id == id);
     if (order) {
       return res.status(200).json({
-        status_response: "An order was found",
         oneOrder: order
       });
     } else {
       res.status(400).json({
-        error_message: "no order found corresponding to that ID"
+        error_message: "no such order"
       });
     }
   }
@@ -50,12 +47,11 @@ class ordersController {
     if (order) {
       (order.title = req.body.title), (order.body = req.body.body);
       return res.status(200).json({
-        status_response: "successfully updated",
         updateOrder: order
       });
     } else {
       res.status(400).json({
-        error_message: "order cannot be updated"
+        error_message: "update not found"
       });
     }
   }
@@ -71,7 +67,7 @@ class ordersController {
         return order !== findOrder;
       });
       res.status(200).json({
-        status_response: "Order deleted",
+        status_response: "Deleted",
         orders: newOrders
       });
     } else {
