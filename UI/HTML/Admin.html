@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SendIT</title>
+	<link rel="stylesheet" type="text/css" href="Admin.css">
+</head>
+<body>
+	<nav class="container">
+    	<div class="home"><a href="/">SendIT</a></div>
+    	<div class="other1">
+    		<button class="dropbtn">Admin</button>
+  			<div class="drp-content">
+  				  <a href="#">View Orders</a>
+   				  <a href="#">View User profile</a>
+   				  <a href="#">Logout</a>
+  			</div>
+    	</div>
+    	<div class="other2"></div>
+ 	</nav>
+<h1>User's order</h1><br><br>
+ 	<div class="view_parcels">
+ 		<div class="first"><h3>Order ID:</h3></div>
+ 		<div class="second"><span>..............</span></div>
+ 		<div class="third"><h3>Parcel Name: </h3></div>
+ 		<div class="fourth"><span>..............</span></div>
+ 		<div class="fourth"><h3>Price: </h3></div>
+ 		<div class="fourth"><span>..............</span></div>
+ 		<div class="five"><h3>Destination:</h3></div>
+ 		<div class="five"><span>................</span></div>
+ 		<div>
+			<form action="/parcels/<%=order.id%> method="GET">
+				<input type="submit" value="Accept Order">
+			</form>
+		</div>
+		<div>
+			<form action="/parcels/<%=order.id%> method="GET">
+				<input type="submit" value="Change status">
+			</form>
+		</div><hr>
+ 	</div>
+</body>
+</html>

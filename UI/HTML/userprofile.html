@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SendIT</title>
+	<link rel="stylesheet" type="text/css" href="/userprofile.css">
+</head>
+<body>
+	<nav class="container">
+    	<div class="home"><a href="/">SendIT</a></div>
+    	<div class="other1"></div>
+    	<div class="dropdown">
+    		<button class="dropbtn">My Account</button>
+  			<div class="drp-content">
+  				  <a href="#">view Orders</a>
+   				  <a href="#">Make Order</a>
+   				  <a href="#">Logout</a>
+  			</div>
+    	</div>
+ 	</nav>
+<h1>My parcels delivery order</h1><br><br><hr>
+
+	<div class="view_parcels">
+ 		<div class="first"><h2>Delivered</h2></div>
+ 		<div class="second"><h2>Pending</h2></div>
+ 		<div class="third">
+ 			<p></p><br>
+ 		</div>
+ 		<div class="fourth">
+			<p></p>
+		</div>
+		<div>
+			<form action="/parcels/<%=order.id%> method="GET">
+				<input type="submit" value="View delivered">
+			</form>
+		</div>
+		<div>
+			<form action="/parcels/<%=order.id%> method="GET">
+				<input type="submit" value="View Pending">
+			</form>
+		</div><hr>
+ 	</div>
+
+<p id="down_paragraph">&copy; 2018 Runoro Isaie</p>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 82%;
+  background-color:#2BC0E4;
+}
+
+.container > div {
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight:bold;
+}
+
+.other1{
+  margin-left:auto;
+}
+
+html, body {
+  box-sizing: border-box;
+  font-family:roboto;
+   background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+  height: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1{
+  color:black;
+  text-transform:uppercase;
+  font-size:24px;
+  font-weight:normal;
+}
+
+
+
+hr { 
+ 
+    border-style: solid;
+    border-width: 3px;
+}
+
+h3{
+  text-decoration: underline;
+}
+
+body{
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+
+a:link, a:visited{
+  background-color:#2BC0E4;
+	text-decoration: none;
+  color: black;
+  padding:10px 10px;
+  text-align:center;
+  display:inline-block;
+}
+
+a:hover{
+	color:white;
+}
+
+.container > div:nth-child(1) {
+  background-color: background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);;; 
+}
+
+.container > div:nth-child(3) {
+  background-color: background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);;; 
+}
+
+.dropbtn {
+    background-color: #2BC0E4;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-decoration:bold;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color:black;
+}
+
+/*Dropdown Content (Hidden by Default)*/
+.drp-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.drp-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.drp-content a:hover {background-color: #EAECC6;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover 
+.drp-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover 
+.dropbtn {background-color: #2BC0E4;}
+
+input[type=text]{
+  border: 2px solid black;
+    border-radius: 4px;
+    background-color: background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+    text-decoration:bold;
+    color: black;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out
+}
+
+input[type=text]:focus {
+    width: 35%;
+    border: 3px solid white;
+    background-color: background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+}
+
+input[type=password]{
+    border: 2px solid black;
+    border-radius: 4px;
+    text-decoration:bold;
+    color: black;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-color: background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+}
+
+input[type=password]:focus {
+    width: 35%;
+    border: 3px solid white;
+    background-color:background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+}
+
+input[type=submit]{
+    background-color:background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+     background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);;
+    border: 0 none;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    -webkit-border-radius:5px;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]:hover {
+    background-color:white;
+    border:2px solid white;
+    border-radius: 5px;
+    color: black;
+}
+
+.view_parcels{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+}
+
+#down_paragraph{
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight:bold;
+  margin-top:140px;
+}
+
+/*Responsive NavBar*/
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container > div {
+    flex: 1 1 50%;
+  }
+}
