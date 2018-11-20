@@ -13,7 +13,7 @@ router.delete("/api/v1/parcels/:id", ordercontrollers.deleteOrder);
 router.get("/api/v1/signin/:id", usercontroller.login);
 router.post("/api/v1/signup", usercontroller.createAccount);
 router.get("/api/v1/users/:id", usercontroller.userProfile);
-router.get("/api/v1/users/:id/parcels", usercontroller.userProfile);
+router.get("/api/v1/users/:id/parcels", usercontroller.fetchOrder);
 router.get("/api/v1/admin", admincontroller.adminPanel);
 
 export default router;
