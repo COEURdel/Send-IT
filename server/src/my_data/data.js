@@ -13,4 +13,12 @@ const orders = [
     }
 ];
 
+const users=[
+    {
+        name:"name",
+        username:"Isaiah",
+        email:"iscarf96@gmail.com",
+        Password:"123344ru"
+    }
+]
 export default orders;

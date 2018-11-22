@@ -58,13 +58,13 @@ class ordersController {
 
 // DELETE/ Cancel an Order
   static deleteOrder(req, res) {
-    let Id = req.params.id;
+    let { id } = req.params;
     const findOrder = orders.find(order => {
-      return order.id == Id;
+      return order.id == id;
     });
     if (findOrder) {
-      const newOrders = orders.filter(post => {
-        return order !== findOrder;
+      const newOrders = orders.filter(order => {
+        return order == findOrder;
       });
       res.status(200).json({
         status_response: "Deleted",
@@ -76,6 +76,7 @@ class ordersController {
       });
     }
   }
+
 
 }
 export default ordersController;

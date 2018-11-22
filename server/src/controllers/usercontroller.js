@@ -1,10 +1,11 @@
-import orders from "../my_data/data";
+import users from "../my_data/data";
 
 class usersController{
-     // GET/ User login
+
+     // GET/ User
   static login(req, res) {
-    res.status(200).json({
-      response_message: "Login"
+    return res.json({
+      user: users
     });
   }
 
@@ -14,6 +15,8 @@ class usersController{
       response_message: "Account created"
     });
   }
+
+  // GET/ User login
 
   // GET/ User Profile
   static userProfile(req, res) {
