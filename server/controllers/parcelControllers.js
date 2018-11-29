@@ -67,59 +67,59 @@ export default {
     });
   },
 
-  changeParcelDestination:(req, res) => {
-    const { id, destination } = req.body;
-    const query = {
-        text: `UPDATE parcels 
-                SET destination=$2
-                WHERE userid=$5
-        `,
-        values: [id, destination]
-    }
-    db.query(env.development, query)
-        .then(order => {
-            order.rows[0] ?
-                res.status(201).json({ message: "The destination was changed" })
-                :
-                res.status(404).json({ ...err });
-        })
-        .catch(err => res.status(500).json({ ...err }))
+//   changeParcelDestination:(req, res) => {
+//     const { id, destination } = req.body;
+//     const query = {
+//         text: `UPDATE parcels 
+//                 SET destination=$2
+//                 WHERE userid=$5
+//         `,
+//         values: [id, destination]
+//     }
+//     db.query(env.development, query)
+//         .then(order => {
+//             order.rows[0] ?
+//                 res.status(201).json({ message: "The destination was changed" })
+//                 :
+//                 res.status(404).json({ ...err });
+//         })
+//         .catch(err => res.status(500).json({ ...err }))
 
-},
+// },
 
-getParcelOrderByUser:(req, res) => {
-    const id = req.user.user_id;
-    const query = {
-        text: `SELECT * FROM parcels WHERE userid = $5`,
-        values: [id]
-    }
-    db.query(env.development, query)
-        .then(parcels => {
-            !parcels.rows.length === 0 ?
-                res.status(200).json({ ...parcels.rows })
-                :
-                res.status(404).json({ message: 'You did not found parcel delivery orders' })
-        })
-        .catch(err => res.status(500).json({ ...err }))
-},
+// getParcelOrderByUser:(req, res) => {
+//     const id = req.user.user_id;
+//     const query = {
+//         text: `SELECT * FROM parcels WHERE userid = $5`,
+//         values: [id]
+//     }
+//     db.query(env.development, query)
+//         .then(parcels => {
+//             !parcels.rows.length === 0 ?
+//                 res.status(200).json({ ...parcels.rows })
+//                 :
+//                 res.status(404).json({ message: 'You did not found parcel delivery orders' })
+//         })
+//         .catch(err => res.status(500).json({ ...err }))
+// },
 
-cancelParcelOrder(req, res) {
-    const { id } = req.params;
-    const status = "Canceled";
-    const query = {
-        text: `UPDATE orders 
-                SET status=$1
-                WHERE order_ref=$2`,
-        values: [status, id]
-    }
-    db.query(env.development, query)
-        .then(order => {
-            order.rows[0] ?
-                res.status(201).json({ message: "Parcel order was canceled" })
-                :
-                res.status(404).json({ ...err })
-        })
-        .catch(err => res.status(500).json({ ...err }))
-},
+// cancelParcelOrder(req, res) {
+//     const { id } = req.params;
+//     const status = "Canceled";
+//     const query = {
+//         text: `UPDATE orders 
+//                 SET status=$1
+//                 WHERE order_ref=$2`,
+//         values: [status, id]
+//     }
+//     db.query(env.development, query)
+//         .then(order => {
+//             order.rows[0] ?
+//                 res.status(201).json({ message: "Parcel order was canceled" })
+//                 :
+//                 res.status(404).json({ ...err })
+//         })
+//         .catch(err => res.status(500).json({ ...err }))
+// },
 
 };
