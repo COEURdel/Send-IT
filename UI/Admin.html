@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <title>Send-IT | Admin</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="brand">
+        <a href="./index.html">
+          <img src="./img/hand-truck.png" alt="brand" height="40px">
+        </a>
+      </div>
+      <nav>
+        <a href="#" class="menu-icon"></a>
+        <ul>
+          <li>
+            <a href="./index.html">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="parcel">
+    <div class="container">
+      <h1 class="text-center">Admin Dashboard</h1>
+      <div class="card">
+        <div class="card-header">
+          <nav class="nav">
+            <a href="#" class="menu-icon"></a>
+            <ul class="nav">
+              <li>
+                <input type="search" name="search" placeholder="search parcels.." class="search-parcel">
+              </li>
+              <li>
+                <a href="./userDetails.html">User Orders</a>
+              </li>
+              <li>
+                <a href="./details.html">Available Orders</a>
+              </li>
+              <li>
+                <a href="./newOrder.html">Create Parcel Order</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="card-content">
+          <div class="parcels-list">
+            <table class="table">
+              <tr class="row">
+                <th>parcelName</th>
+                <th>Location</th>
+                <th>Destination</th>
+                <th>Departure time</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+              <tr class="row">
+                <td>Akabanga</td>
+                <td>Kigali</td>
+                <td>Musanze</td>
+                <td> 3-07-2018 4PM</td>
+                <td>3,000frw</td>
+                <td>
+                  <a href="./userDetails.html">
+                    <button class="ride-success">Order Details</button>
+                  </a>
+                </td>
+              </tr>
+              <tr class="row">
+                <td>Iphone 6</td>
+                <td>New York</td>
+                <td>Kampala</td>
+                <td> 3-07-2018 4PM</td>
+                <td>400$</td>
+                <td>
+                  <a href="./userDetails.html">
+                    <button class="ride-success">Order Details</button>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="copyright">
+    <div class="container">
+      <h4> © 2018 Runoro Isaie</h4>
+    </div>
+  </footer>
+</body>
+
+</html>
