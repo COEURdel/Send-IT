@@ -1,8 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/ec81a45d5f4fa1409536/maintainability)](https://codeclimate.com/github/COEURdel/Send-IT/maintainability)
-
-[![Build Status](https://travis-ci.org/COEURdel/Send-IT.svg?branch=master)](https://travis-ci.org/COEURdel/Send-IT)
-
-[![Coverage Status](https://coveralls.io/repos/github/COEURdel/Send-IT/badge.svg)](https://coveralls.io/github/COEURdel/Send-IT)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ec81a45d5f4fa1409536/maintainability)](https://codeclimate.com/github/COEURdel/Send-IT/maintainability) [![Build Status](https://travis-ci.org/COEURdel/Send-IT.svg?branch=master)](https://travis-ci.org/COEURdel/Send-IT) [![Coverage Status](https://coveralls.io/repos/github/COEURdel/Send-IT/badge.svg)](https://coveralls.io/github/COEURdel/Send-IT)
 
 # SEND-IT
 
@@ -81,4 +77,5 @@ yarn test
 API Endpoint: https://
 
 ## AUTHOR
+Runoro Isaie
 
